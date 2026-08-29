@@ -1,0 +1,21 @@
+# Solution 1:
+balances = [-120,2300,-40, 120, 1000, 80]
+for number in balances:
+	if number < 0:
+		print("Negative balance identified!!")
+
+# Solution 2:
+clients = [24,12,34,54,80,15]
+adult = 0
+for age in clients:
+	if age >= 18:
+		adult = adult + 1
+print("There are",adult,"adults in this group")
+
+# Solution 3:
+name = input("Please, say a name")
+name = name.lower().strip()
+while name != "pablo":
+	name = input("Please, say a name")
+	name = name.lower().strip()
+print("Ok. You typed Pablo")
